@@ -1,7 +1,7 @@
 #include<stdio.h >
 int main(){
 	int choice,max,min,n,m,p,sum=0;
-	int arr[100], index, flag=-1,check;
+	int arr[1000], index, flag=-1,check;
 	int size =sizeof(arr)/sizeof(int);
 	do {
         printf("\n********MENU*******\n");
@@ -25,7 +25,7 @@ int main(){
 			if(n<=0){
 				printf(" Moi ban nhap lai du lieu trong mang");
 				return 1;
-			}
+		     	}
 			for ( int i = 0 ; i < n ; i++){
 			printf("Nhap phan tu thu %d : ",i);
 			scanf("%d", &arr[i]);
@@ -58,12 +58,17 @@ int main(){
 			printf("tong gia tri cua mang la :%d",sum);
 				break;
 			case 5:  
-			printf("moi ban nhap gia tri phan tu muon them vao mang :");
-			scanf("%d",m);
+			printf("moi ban nhap gia tri phan tu muon them vao cuoi mang :");
+			scanf("%d", &m);
 			for(int i=0;i<n;i++){
-				
+				for(int j=0;j<n;j++){
+					
+				}
 			}
-			
+			 printf("Mang sau khi them la :\n");
+			   for (int i=0;i<n;i++){
+			   printf("%d\n", arr[i]);
+		    }
 			    break;
 			case 6:
 				printf("nhap vi tri muon xoa phan tu ");
@@ -157,6 +162,7 @@ int main(){
 			printf("moi ban nhap lai du lieu ");
 		  }
 		} while (choice != 11);
+		return 0;
 }
 
 
